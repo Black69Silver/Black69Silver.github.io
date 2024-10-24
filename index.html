@@ -1,18 +1,509 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="Anthony Tsang, George Georgiev" name="author">
+	<meta content="George Georgiev, resume" name="description">
+
+	<!-- Open graph meta tags-->
+	<meta content="George Georgiev" property="og:site_name">
+	<meta content="George Georgiev" property="og:title">
+	<meta content="George Georgiev, resume" property="og:description">
+	<meta content="website" property="og:type">
+
+	<!-- Favicon and website title -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link href="Media/favicon.ico" rel="icon" type="image/x-icon">
+
+	<title>George Georgiev</title>
+
+
+	<!-- website styles -->
+	<style>
+    :root {
+      --blue-color: #003355;
+      --content-width: 98vw;
+    }
+
+    * {
+      margin: 0;
+    }
+
+    html {
+      font: 16px/140% Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+	body {
+      min-width:280px;
+      min-height: 100vh;
+      padding: 0;
+      justify-content: center;
+      overflow-x: hidden;
+	}
+
+	#title {
+      height: 2.5rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--blue-color);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    #company-header {
+        cellspacing:0;
+        border:0;
+        cellpadding:0;
+        margin:0pt;
+        mso-padding-alt:0pt 0pt 0pt 0pt;
+        border-left:none;
+        border-top:none;
+        border-right:none;
+        border-bottom:none;
+        mso-border-insidev:none;
+        mso-border-insideh:none;
+    }
+
+    #company-name-link {
+      font-weight: bold;
+      color: var(--blue-color);
+    }
+
+    #link {
+      color: var(--blue-color);
+    }
+
+    #cell-left {
+      width: 65%;
+    }
+
+    #cell-right {
+      width: 35%;
+      text-align: right;
+    }
+
+		nav {
+      max-width: 1024px;
+      width: var(--content-width);
+      background-color: var(--blue-color);
+
+      display: flex;
+      flex-direction: row;
+		}
+
+    main {
+      margin: 0 calc((100vw - var(--content-width)) / 2);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      }
+
+    .menu, .content {
+      padding: 5vh 2vw;
+    }
+
+    .content {
+      max-width: 750px;
+      min-height: 100%;
+    }
+
+    .about-page-h3 {
+      margin-bottom: 0.6rem;
+    }
+
+	</style>
 </head>
 
 <body>
+    <section class="content">
+        <table width="100%" id="company-header">
+            <tr>
+                <td colspan="3">
+                    <div id="title">
+                        GEORGE GEORGIEV
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td width="45%" style="text-align:right">
+                    +359 89 2210008
+                </td>
+                <td width="10%" style="text-align:center">
+                    &#10625;
+                </td>
+                <td width="45%">
+                    <p>Heilbronn, Germany</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="45%" style="text-align:right">
+                    <a id="link" href="mailto:george@consultant.bg" title="Send an email">george@consultant.bg</a></p>
+                </td>
+                <td width="10%" style="text-align:center">
+                    &#10625;
+                </td>
+                <td width="45%">
+                    <p><a id="link" href="https://www.linkedin.com/in/gngeorgiev" target="_blank" title="Visit LinkedIn for a full profile">linkedin.com/in/gngeorgiev</a></p>
+                </td>
+            </tr>
+        </table>
+        <p>
+            &nbsp;
+        </p>
+        <ul>
+            <li>Critical, analytical, systemic approach in execution of daily tasks and management of
+    critical situations</li>
+            <li>Experienced in market research and analysis, business development, and operations</li>
+            <li>Holder of a RICS-accredited Master’s degree in Property Development and an MBA</li>
+            <li>Fluent in English, Bulgarian, and Russian and learning German</li>
+        </ul>
+        <p>
+            &nbsp;
+        </p>
+        <h3 class="about-page-h3"><b>WORK EXPERIENCE</b></h3>
+        <table width="100%" id="company-header">
+            <tr>
+                <td id="cell-left">
+                    <a id="company-name-link" href="https://dbg.biz/" target="_blank">DEVELOPMENT BG</a> – Professional real estate services
+                </td>
+                <td id="cell-right">
+                    <b>Sofia, Bulgaria</b>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell-left">
+                    <i>Principal</i>
+                </td>
+                <td id="cell-right">
+                    2008 – present
+                </td>
+            </tr>
+        </table>
+        <ul>
+            <li>Completed over 1,000 appraisals, highest and best use studies, and feasibility studies of properties and projects with total value of over € 1 billion in Bulgaria, across the Balkans and in Central Asia for developers like
+                <a id="company-name-link" href="https://bcegi.co.uk/" target="_blank">BCEGI</a>,
+                <a id="company-name-link" href="https://www.kuzugrup.com/en/Index" target="_blank">Kuzu Grup</a>,
+                <a id="company-name-link" href="https://www.sembolinsaat.com.tr/" target="_blank">Sembol İnşaat</a>,
+                investment funds like
+                <a id="company-name-link" href="https://www.aps-holding.com/" target="_blank">APS Holding</a>,
+                <a id="company-name-link" href="https://www.b2-impact.com/" target="_blank">B2 Impact</a>,
+                and banks like
+                <a id="company-name-link" href="https://www.allianz.bg/" target="_blank">Allianz Bank</a>,
+                <a id="company-name-link" href="https://www.burgan.com/" target="_blank">Burgan Bank</a>,
+                <a id="company-name-link" href="https://www.postbank.bg/en" target="_blank">Eurobank Bulgaria</a>,
+                <a id="company-name-link" href="https://www.piraeusbank.gr/en/" target="_blank">Piraeus Bank</a>,
+                <a id="company-name-link" href="https://www.ubb.bg/en" target="_blank">United Bulgarian Bank</a>.
+            </li>
+            <li>Audited valuation reports on more than 1,300 properties countrywide with total value of over € 650 million for
+                <a id="company-name-link" href="https://www.alpha.gr/en" target="_blank">Alpha Bank</a><b> Bulgaria Branch</b> and <b>Eurobank Bulgaria</b>.</li>
+            <li>Prepared the ground for
+                <a id="company-name-link" href="https://www.lendlease.com/" target="_blank">Bovis Lend Lease</a> to enter Bulgarian market – screened and negotiated with potential clients, dozens of suppliers, contractors, and employees.</li>
+            <li>Invested in, divested, refurbished, fitted out, furnished and managed several properties.</li>
+                <ul>
+                    <li>Minimized total cost of ownership – maintenance effort, running and capital costs;</li>
+                    <li>Delivered agreed upon quality.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>
+            &nbsp;
+        </p>
+        <table width="100%" id="company-header">
+            <tr>
+                <td id="cell-left">
+                    <a id="company-name-link" href="https://shre.kz/?lang=en" target="_blank">SCOT HOLLAND</a> | <a id="company-name-link" href="https://cbre.com/   " target="_blank">CB RICHARD ELLIS</a> | Kazakhstan
+                </td>
+                <td id="cell-right">
+                    <b>Almaty and Astana, Kazakhstan</b>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell-left">
+                    Professional real estate services
+                </td>
+                <td id="cell-right">
+                    2005 – 2008
+                </td>
+            </tr>
+            <tr>
+                <td id="cell-left">
+                    <i>Project Manager, Real Estate Development Consulting</i>
+                </td>
+                <td id="cell-right">
+                    2007 – 2008
+                </td>
+            </tr>
+        </table>
+        <ul>
+            <li>Advised on master planning, formulated project concepts, and completed project and market analyses of more than 20 projects with values ranging from $ 10 million to over $ 40 billion for international investors, like the real estate platform of
+                <a id="company-name-link" href="https://www.lcatterton.com/" target="_blank">Groupe Arnault - LVMH</a>,
+                <a id="company-name-link" href="http://www.caspian.kz/en" target="_blank">Caspian Group</a>,
+                property developers, like
+                <a id="company-name-link" href="https://www.aldar.com/en" target="_blank">Aldar Properties</a>,
+                <a id="company-name-link" href="https://limitless.com/" target="_blank">Limitless</a>,
+                and banks.
+            </li>
+            <li>Discovered current development opportunities and market niches to amend projects’ marketability, profitability and/or cash flow, e.g. proposed smaller unit sizes in an upscale residential project that would make it more attractive to target market.</li>
+            <li>Conducted supply/demand, market and marketability studies,
+                <a id="link" href="https://en.wikipedia.org/wiki/SWOT_analysis" target="_blank">SWOT analyses</a> of dozens of projects and locations; recommended appropriate project and unit amenity mix.</li>
+            <li>Surveyed dozens of sites and buildings; identified design flaws, construction defects and areas of deferred maintenance.</li>
+            <li>Assessed transportation networks, level of infrastructure development, and environmental factors and determined their impact on tens of projects.</li>
+        </ul>
+        <table width="100%" id="company-header">
+            <tr>
+                <td id="cell-left">
+                    <i>Branch Manager, Astana</i>
+                </td>
+                <td id="cell-right">
+                    2005 – 2007
+                </td>
+            </tr>
+        </table>
+        <ul>
+            <li>Managed a team of four professionals to provide real estate services – client consultation, property sourcing and presentation, negotiation and transaction management, market research and analysis – to expatriate and upscale markets.</li>
+            <li>Advised major corporate occupiers, like
+                <a id="company-name-link" href="https://corporate.exxonmobil.com/" target="_blank">ExxonMobil</a>,
+                <a id="company-name-link" href="https://www.lufthansa-technik.com/" target="_blank">Lufthansa Technik AG</a>,
+                embassies of the 27 member countries of the
+                <a id="company-name-link" href="https://european-union.europa.eu/principles-countries-history/country-profiles_en" target="_blank">European Union</a>
+            on provision of optimal working and living conditions to their staff in the second-coldest national capital in the world.</li>
+            <li>Facilitated 58 residential and commercial brokerage deals that generated $ 280,000 in revenue and achieved a 41% profit margin.</li>
+            <li>Organised and promoted an international real estate conference; attracted 85 participants from seven countries who discussed hot industry topics and development opportunities; increased public awareness of company services.</li>
+            <li>Mediated negotiations; prepared tens of heads of terms, offers, lease contracts.</li>
+        </ul>
+        <p>
+            &nbsp;
+        </p>
+        <table width="100%" id="company-header">
+            <tr>
+                <td id="cell-left">
+                    <b>DINAL</b> Brewery – a <a id="company-name-link" href="https://www.theheinekencompany.com/" target="_blank">HEINEKEN</a> subsidiary
+                </td>
+                <td id="cell-right">
+                    <b>Almaty, Kazakhstan</b>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell-left">
+                    <i>Operating Systems Manager</i>
+                </td>
+                <td id="cell-right">
+                    2004 – 2005
+                </td>
+            </tr>
+        </table>
+        <ul>
+            <li>Reorganized staff transportation – increased number of passengers by 74% over a five-month period, reduced monthly cost per commuter by 36% and improved quality of transportation.</li>
+            <li>Created a management information system generating sales forecasts and integrated it with dispatch and production master plans, inventory control and labour requirements planning.</li>
+            <li>Initiated a returns management procedure that later became part of a
+                <a id="link" href="https://en.wikipedia.org/wiki/Hazard_analysis_and_critical_control_points" target="_blank">HACCP</a> system.</li>
+            <li>Researched locally available
+                <a id="link" href="https://en.wikipedia.org/wiki/Enterprise_resource_planning" target="_blank">ERP</a> systems and their suitability to company needs. Organized meetings between stakeholders and vendors.</li>
+        </ul>
+        <p>
+            &nbsp;
+        </p>
+        <table width="100%" id="company-header">
+            <tr>
+                <td id="cell-left">
+                    <a id="company-name-link" href="https://www.usaid.gov/" target="_blank">USAID</a> – United States Government economic assistance agency
+                </td>
+                <td id="cell-right">
+                    <b>Almaty, Kazakhstan</b>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell-left">
+                    <i>Manager – Business Advisory Services, Central Asia Enterprise Development Project</i>
+                </td>
+                <td id="cell-right">
+                    2001 – 2002
+                </td>
+            </tr>
+        </table>
+        <ul>
+            <li>Created a procedure for providing business advisory services that resulted in a more consistent and efficient service delivery to clients in 12 offices around Central Asia and better intra-project communications.</li>
+            <li>Trained 20 consultants from five countries in providing business advisory services.</li>
+        </ul>
+        <p>
+            &nbsp;
+        </p>
+        <table width="100%" id="company-header">
+            <tr>
+                <td id="cell-left">
+                    <a id="company-name-link" href="https://www.polfracht.pl/" target="_blank">POLFRACHT</a> – Shipbroking and Chartering Company
+                </td>
+                <td id="cell-right">
+                    <b>Gdynia, Poland</b>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell-left">
+                    <i><a id="company-name-link" href="https://aiesec.org/" target="_blank">AIESEC</a> Intern</i>, Tankers and Agency Department
+                </td>
+                <td id="cell-right">
+                    Summer 1993
+                </td>
+            </tr>
+        </table>
+        <p>
+            &nbsp;
+        </p>
+        <h3 class="about-page-h3"><b>EDUCATION</b></h3>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
-
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
-
+        <table width="100%" id="company-header">
+            <tr>
+                <td id="cell-left">
+                    <a id="company-name-link" href="https://www.rgu.ac.uk/" target="_blank">ROBERT GORDON UNIVERSITY</a>
+                </td>
+                <td id="cell-right">
+                </td>
+            </tr>
+            <tr>
+                <td id="cell-left">
+                    <a id="link" href="https://www.rgu.ac.uk/study/academic-schools/the-scott-sutherland-school-of-architecture-and-built-environment" target="_blank">Scott Sutherland School of Architecture and Built Environment</a>
+                </td>
+                <td id="cell-right">
+                    <b>Aberdeen, United Kingdom</b>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell-left">
+                    Master of Science in Property Development
+                </td>
+                <td id="cell-right">
+                </td>
+            </tr>
+        </table>
+        <ul>
+            <li>Course accredited by the
+                <a id="company-name-link" href="https://www.rics.org/" target="_blank">Royal Institution of Chartered Surveyors</a> (RICS)
+                and the
+                <a id="company-name-link" href="https://www.ciob.org/" target="_blank">Chartered Institute of Building</a> (CIOB).</li>
+            <li>Award: merit-based 50% tuition scholarship.</li>
+        </ul>
+        <p>
+            &nbsp;
+        </p>
+        <table width="100%" id="company-header">
+            <tr>
+                <td id="cell-left">
+                    <a id="company-name-link" href="https://www.case.edu/" target="_blank">CASE WESTERN RESERVE UNIVERSITY</a>
+                </td>
+                <td id="cell-right">
+                </td>
+            </tr>
+            <tr>
+                <td id="cell-left">
+                    <a id="link" href="https://case.edu/weatherhead/" target="_blank">Weatherhead School of Management</a>
+                </td>
+                <td id="cell-right">
+                    <b>Cleveland, OH, USA</b>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell-left">
+                    <a id="link" href="https://ceu.edu/" target="_blank">IMC International School of Business</a>
+                </td>
+                <td id="cell-right">
+                    <b>Budapest, Hungary</b>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell-left">
+                    Joint International Master of Business Administration (MBA)
+                </td>
+                <td id="cell-right">
+                </td>
+            </tr>
+        </table>
+        <ul>
+            <li>
+                <table width="100%" id="company-header">
+                    <tr>
+                        <td id="cell-left">
+                            Exchange semester at
+                            <a id="company-name-link" href="https://www.em-lyon.com/en/" target="_blank">E. M. Lyon</a>.
+                        </td>
+                        <td id="cell-right">
+                            <b>Lyon, France</b>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>Award: merit-based $ 20,000 full tuition
+                <a id="link" href="https://www.opensocietyfoundations.org/" target="_blank">Soros</a> Scholarship.</li>
+        </ul>
+        <p>
+            &nbsp;
+        </p>
+        <table width="100%" id="company-header">
+            <tr>
+                <td id="cell-left">
+                    <a id="company-name-link" href="https://www.tu-sofia.bg/" target="_blank">TECHNICAL UNIVERSITY – SOFIA</a>
+                </td>
+                <td id="cell-right">
+                </td>
+            </tr>
+            <tr>
+                <td id="cell-left">
+                    <a id="link" href="https://tu-sofia.bg/faculties/read/29" target="_blank">Faculty of Management</a>
+                </td>
+                <td id="cell-right">
+                    <b>Sofia, Bulgaria</b>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell-left">
+                    Master of Science in Industrial Management
+                </td>
+                <td id="cell-right">
+                </td>
+            </tr>
+        </table>
+        <ul>
+            <li>Graduated as class valedictorian.</li>
+            <li>
+                <table width="100%" id="company-header">
+                    <tr>
+                        <td id="cell-left">
+                            Exchange semester at
+                            <a id="company-name-link" href="https://www.odisee.be/en" target="_blank">KAHO Sint-Lieven</a>.
+                        </td>
+                        <td id="cell-right">
+                            <b>Gent, Belgium</b>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>Member of <b>AIESEC</b>, Local Committee Vice-President Student Exchange.</li>
+            <li>Award: merit-based full tuition scholarship and
+                <a id="link" href="https://op.europa.eu/en/publication-detail/-/publication/17011521-0771-4ddd-8540-bc4c6a154ae0/language-en/format-PDF/source-308727178" target="_blank">Tempus</a> Scholarship.</li>
+        </ul>
+        <p>
+            &nbsp;
+        </p>
+        <p>
+            Advanced-level MS-Excel user with financial modelling and forecasting skills.
+        </p>
+        <p>
+            &nbsp;
+        </p>
+        <p>
+            Fluent in English, Bulgarian, and Russian. Conversational skills in
+                <a id="link" href="https://en.wikipedia.org/wiki/Slavic_languages" target="_blank">Slavic</a> languages.
+        </p>
+    </section>
 </body>
 </html>
